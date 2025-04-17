@@ -1,3 +1,5 @@
+package com.aluracursos.cardalura.compra;
+
 public class Compra implements Comparable<Compra> {
     private final double valor;
     private final String descripcion;

@@ -1,3 +1,8 @@
+package com.aluracursos.cardalura.principal;
+
+import com.aluracursos.cardalura.compra.Compra;
+import com.aluracursos.cardalura.tarjeta.TarjetaDeCredito;
+
 import java.util.Scanner;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -16,6 +21,7 @@ public class Principal {
         double limite = scanner.nextDouble();
         scanner.nextLine();
         TarjetaDeCredito tarjeta = new TarjetaDeCredito(limite);
+        System.out.printf("El límite inicial de su tarjeta es: $%.2f%n", tarjeta.getLimite());
 
         while (true) {
             System.out.println("\n---------------------------------------------------");
@@ -43,7 +49,7 @@ public class Principal {
                     break;
                 }
 
-                System.out.print("¿Desea registrar otra compra? Ingrese 1 para SÍ / 0 para NO: ");
+                System.out.print("¿Desea registrar otra compra? Ingrese 0 para NO o 1 para SÍ: ");
                 int opcion = scanner.nextInt();
                 scanner.nextLine();
                 if (opcion == 0) {

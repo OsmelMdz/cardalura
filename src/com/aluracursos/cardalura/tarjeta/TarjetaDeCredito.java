@@ -1,3 +1,7 @@
+package com.aluracursos.cardalura.tarjeta;
+
+import com.aluracursos.cardalura.compra.Compra;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Collections;
